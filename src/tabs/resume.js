@@ -63,18 +63,51 @@ class ResumeScreen extends Component {
                 contentStyle={{ backgroundColor: "#ddecf8" }}
               />
 
-              <View style={styles.buttonStyle}>
-                <CustomButton>CSS</CustomButton>
-                <CustomButton>HTML</CustomButton>
-                <CustomButton>React Native</CustomButton>
-                <CustomButton>Javascript</CustomButton>
+              <ScrollView>
+              <View style={styles.ButtonViewStyle}>
+                <Container>
+                  <Content>
+                    <Button transparent info>
+                      <Text>Key Skills</Text>
+                    </Button>
+                  </Content>
+                </Container>
               </View>
+
               <View style={styles.buttonStyle}>
+                <CustomButton>HTML</CustomButton>
                 <CustomButton>C#</CustomButton>
                 <CustomButton>C++</CustomButton>
                 <CustomButton>C</CustomButton>
                 <CustomButton>Selenium Framwork</CustomButton>
+                <CustomButton>React Native</CustomButton>
+                <CustomButton>Javascript</CustomButton>
+                <CustomButton>CSS</CustomButton>
               </View>
+
+              <View style={styles.ButtonViewStyle}>
+                <Container>
+                  <Content>
+                    <Button transparent info>
+                      <Text>Key Platforms</Text>
+                    </Button>
+                  </Content>
+                </Container>
+              </View>
+
+              <View style={styles.buttonStyle}>
+                <CustomButton>Photoshop</CustomButton>
+                <CustomButton>Postman</CustomButton>
+                <CustomButton>Netbeans</CustomButton>
+                <CustomButton>Eclipse</CustomButton>
+                <CustomButton>Android Studio</CustomButton>
+                <CustomButton>Visual Studio</CustomButton>
+                <CustomButton>VS Code</CustomButton>
+              </View>
+
+            </ScrollView>
+
+
             </Content>
           </Container>
         </View>
@@ -85,30 +118,28 @@ class ResumeScreen extends Component {
 
 const styles = StyleSheet.create({
   iconStyle: {
-    width: 150,
-    height: 150,
-    justifyContent: 'center',
-    alignItems: "center"
+    width: 200,
+    height: 200,
+    borderRadius: 100
   },
 
   ImageViewStyle: {
     justifyContent: "center",
     alignItems: "center",
-    height: 150,
-    width: 150,
-    borderColor: "red",
-    borderRadius: 50,
-    paddingTop: 20,
-    paddingLeft: 130
+    padding: 10
   },
 
   buttonStyle: {
-    flexDirection: "row-reverse",
-    justifyContent: "space-between"
+    flexDirection: "row",
+    flexWrap: "wrap-reverse",
+    //flexDirection: "row-reverse",
+    justifyContent: "space-evenly"
   },
 
   mainView: {
-    flex: 1
+    flex: 1,
+    justifyContent: "center",
+    justifyContent: "center"
   },
 
   contentViewStyle: {
@@ -117,6 +148,11 @@ const styles = StyleSheet.create({
 
   buttonStyle2: {
     alignItems: "center"
+  },
+
+  ButtonViewStyle: {
+    width: "100%",
+    height: 50
   }
 });
 

@@ -37,7 +37,7 @@ class Projects extends Component {
             </CardItem>
             <CardItem>
               <Body>
-                <Image source={{uri: 'https://www.mhlnews.com/sites/mhlnews.com/files/styles/article_featured_retina/public/blockchain_2.gif?itok=skdt98tS'}} style={{height: 200, width: 375, flex: 1}}/>
+                <Image source={{uri: 'https://www.mhlnews.com/sites/mhlnews.com/files/styles/article_featured_retina/public/blockchain_2.gif?itok=skdt98tS'}} style={{height: 200, width: '99%', flex: 1}}/>
                 <Text>
                 I made my final year project on Blockchain Technology. We built a new Blockchain on Python langauage. Which fulfilled the core concepts of an immutable ledger. We could mine a block and can do transactions between the nodes
                 </Text>
@@ -69,7 +69,7 @@ class Projects extends Component {
             </CardItem>
             <CardItem>
               <Body>
-                <Image source={require('../images/todologo.png')} style={{height: 200, width: 375, flex: 1}}/>
+                <Image source={require('../images/todologo.png')} style={{height: 200, width:'99%', flex: 1}}/>
                 <Text>
                 Its an application in which user can enter daily Todo and if there is something that user wants to note user can also note it by switching to node tab. Since todos and note may be confidential so user needs to login and would be authenticated via Firebase
                 </Text>
